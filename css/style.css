@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/* Base */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Noto Sans JP", "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #4c4c4c;
+}
+/*
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #071e3d;
+}
+
+/* 複数箇所で使いまわす指定 */
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* header */
+header {
+    padding-bottom: 100px;
+    background-color: #99ccff;
+}
+
+.button-menu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 20px;
+    margin: 0 0 0 auto;
+    font-size: 36px;
+    line-height: 0;
+    color: #a8a698;
+}
+
+/* navi */
+.sp-nav {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    background-color: #071e3d;
+    opacity: .9;
+}
+
+.sp-nav-list {
+    width: 80%;
+    padding: 0 10%;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2.8rem;
+    text-align: left;
+    list-style: none;
+}
+
+.sp-nav-list li {
+    margin-bottom: 1rem;
+}
+
+/* プロフィール */
+.profile {
+    background-color: #f1f0e9;
+}
+
+.profile .container {
+    display: flex;
+    justify-content: space-between;
+    width: 64%;
+    margin: 0 auto;
+}
+
+.profile-name {
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 2.0rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    line-height: normal;
+    color: #a8a698;
+}
+
+.profile-name span {
+    display: block;
+    font-size: 5.6rem;
+    letter-spacing: 0.5rem;
+    color: #071e3d;
+}
+
+.profile-introduction {
+    margin: 0 0 60px;
+}
+
+.profile-image {
+    margin: 60px 0 0 40px;
+    border-radius: 50%;
+}
+
+/* Moreボタン、メールボタン、SNSボタン部分 */
+ul.contact {
+    padding: 0;
+    margin-bottom: 180px;
+}
+
+ul.contact li {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+ul.contact a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 1.1;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #a8a698;
+    text-decoration: none;
+}
+
+ul.contact a:hover {
+    background-color: #071e3d;
+}
+
+ul.contact li.button-more {
+    margin-right: 40px;
+}
+
+ul.contact li.button-more a {
+    width: 200px;
+    height: 60px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    background-color: #071e3d;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+/* 複数箇所で使いまわす指定 */
+h2 {
+    margin: 0 0 80px;
+    font-size: 4.8rem;
+    font-weight: 300;
+    color: #071e3d;
+    letter-spacing: 0.5rem;
+}
+
+/* skill */
+.skills {
+    padding: 80px 0 120px;
+    background-color: #FFFFDD;
+}
+
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.skills-box {
+    width: 32%;
+    padding: 40px;
+    color: #071e3d;
+    box-sizing: border-box;
+    box-shadow: -12px 10px 12px rgba(0, 0, 0, 0.25);
+}
+
+.color-a {
+    background-color: #FFBEDA;
+}
+
+.color-b {
+    background-color: #B1F9D0;
+}
+
+.color-c {
+    background-color: #FFBEDA;
+}
+
+.skills-box-heading {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.skills i {
+    float: left;
+    padding-top: 16px;
+    margin: 0 20px 0 0;
+    font-size: 4.4rem;
+    color: #071e3d;
+}
+
+.skills h3 {
+    margin: 0;
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+.skills p {
+    line-height: 2;
+}
+
+/* works */
+.works {
+    padding: 80px 0 180px;
+    background-color: #f1f0e9;
+}
+
+.works .container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.works .container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.works-box {
+    position: relative;
+    float: left;
+    width: 32%;
+    margin: 0 2% 40px 0;
+    color: #555;
+    background-color: #fff;
+    box-shadow: -16px 20px 16px rgba(0, 0, 0, 0.04);
+    text-decoration: none;
+}
+
+.works-box:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.works-box img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.works-box-inner {
+    height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.works-box-inner h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.works-box-inner span {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.2rem;
+    color: #a8a698;
+}
+
+/* footer */
+footer {
+    padding: 20px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    background-color:  #99ccff;
+}
